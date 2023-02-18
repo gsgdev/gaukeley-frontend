@@ -5,7 +5,7 @@
 	<div class="left-nav">
 		<p>Features</p>
 		<p>Fuer Unternehme</p>
-		<button class="login-button">Login</button>
+		<p class="login-button">Login</p>
 	</div>
 </nav>
 

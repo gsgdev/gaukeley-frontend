@@ -1,8 +1,8 @@
 <nav>
-	<div class="right-nav">
+	<div class="left-nav">
 		<p>logo</p>
 	</div>
-	<div class="left-nav">
+	<div class="right-nav">
 		<p>Features</p>
 		<p>Fuer Unternehme</p>
 		<p class="login-button">Login</p>
@@ -16,17 +16,16 @@
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
-		border: 1px solid green;
 	}
-	.right-nav > p {
+	.left-nav > p {
 		vertical-align: middle;
 	}
 
-	.left-nav > p {
+	.right-nav > p {
 		margin-right: 1.25rem;
 		text-decoration: underline;
 	}
-	.left-nav > p:hover {
+	.right-nav > p:hover {
 		text-decoration: none;
 		cursor: pointer;
 	}
@@ -37,7 +36,7 @@
 		font-size: 1rem;
 		margin-right: 0.5rem;
 	}
-	.left-nav {
+	.right-nav {
 		display: flex;
 		flex-direction: row;
         vertical-align: middle;

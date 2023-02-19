@@ -1,6 +1,6 @@
 <section class="qualities-wrapper">
 	<div class="qualities">
-		<div class="secure-qualities">
+		<div class="qualities-section">
 			<p class="circle">
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
@@ -21,7 +21,7 @@
 			<p class="qualities-text">Unsere Bank ist sicherer als Al-Pachino seine Mudda</p>
 		</div>
 
-		<div class="secure-qualities fast">
+		<div class="qualities-section margin-top-10">
 			<p class="circle">
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
@@ -41,7 +41,7 @@
 			<p class="qualities-heading">FAST</p>
 			<p class="qualities-text">Schneller als der Arzt kommt.</p>
 		</div>
-		<div class="secure-qualities fast">
+		<div class="qualities-section margin-top-10 margin-top-3">
 			<p class="circle">
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
@@ -58,7 +58,7 @@
 					/>
 				</svg>
 			</p>
-			<p class="qualities-heading ">RELIABLE</p>
+			<p class="qualities-heading">RELIABLE</p>
 			<p class="qualities-text padding-10">
 				Hier geht nichts kaputt oder verloren, außer es geht was kaputt oder verloren!
 			</p>
@@ -69,10 +69,10 @@
 <style>
 	.qualities-wrapper {
 		margin-top: 2.5rem;
-        margin-bottom: 0;
+		margin-bottom: 0;
 		position: absolute;
 		top: 100vh;
-        /* aufpassen wenn es snappt dann hier svh oder dvh */
+		/* aufpassen wenn es snappt dann hier svh oder dvh */
 		width: 100%;
 		display: flex;
 		flex-direction: column;
@@ -85,7 +85,7 @@
 		align-items: center;
 		justify-content: center;
 	}
-	.secure-qualities {
+	.qualities-section {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -111,7 +111,7 @@
 		margin-bottom: 0;
 		padding: 0;
 		font-size: 3rem;
-        font-weight: bold;
+		font-weight: bold;
 	}
 	.qualities-text {
 		margin-top: 0.25rem;
@@ -119,8 +119,8 @@
 		text-align: center;
 		font-size: 1.5rem;
 	}
-	.fast {
-		margin-top: 5rem;
+	.margin-top-10 {
+		margin-top: 10rem;
 		margin-bottom: 0;
 	}
 	.padding-10 {

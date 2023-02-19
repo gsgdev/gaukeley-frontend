@@ -16,7 +16,7 @@
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
-		border: 1px solid red;
+		border: 1px solid green;
 	}
 	.right-nav > p {
 		vertical-align: middle;

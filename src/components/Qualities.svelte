@@ -70,7 +70,6 @@
 	.qualities-wrapper {
 		margin-top: 2.5rem;
         margin-bottom: 0;
-		padding-inline: 10px;
 		position: absolute;
 		top: 100vh;
         /* aufpassen wenn es snappt dann hier svh oder dvh */

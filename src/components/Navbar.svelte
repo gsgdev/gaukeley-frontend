@@ -1,5 +1,4 @@
 <script lang="ts">
-
 	let mobileNavButton: any;
 	let mobileNav: any;
 
@@ -96,13 +95,14 @@
 		margin-inline: auto;
 	}
 	@media (min-width: 800px) {
-		
 		nav {
 			position: static;
 			display: flex;
 			justify-content: space-between;
 			margin: 0;
 			padding: 0;
+			/* width: 100%;
+			height: 100%; */
 		}
 		.right-nav {
 			display: flex;
@@ -122,7 +122,12 @@
 			width: auto;
 			height: auto;
 			margin: 0;
-			padding: 0;
+			padding: 1rem 0 0 0;
+			margin-left: 3rem;
+			border-radius: 10px;
+		}
+		.right-nav[aria-expanded='true'] {
+			transform: translateX(0);
 		}
 	}
 </style>

@@ -1,7 +1,8 @@
-<script>
+<script lang="ts">
 	import Navbar from '../components/Navbar.svelte';
 	import Hero from '../components/Hero.svelte';
 	import Qualities from '../components/Qualities.svelte';
+
 </script>
 
 <div class="body">
@@ -9,8 +10,26 @@
 
 	<Hero />
 
-	<Qualities />
+	<div class="content-wrapper">
+		<Qualities />
+	</div>
 </div>
 
 <style>
+	.content-wrapper {
+		margin-top: 1.5rem;
+		margin-bottom: -1;
+		position: absolute;
+		top: 105dvh;
+		/* aufpassen wenn es snappt dann hier svh oder dvh */
+		width: 99%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	:global(body) {
+		background-image: url('/src/lib/images/gradient_background.svg');
+		background-size: cover;
+	}
 </style>

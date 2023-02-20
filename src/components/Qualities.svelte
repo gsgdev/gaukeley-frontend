@@ -1,4 +1,4 @@
-<section class="qualities-wrapper">
+<section id="qualities" class="qualities-wrapper">
 	<div class="qualities">
 		<div class="qualities-section">
 			<p class="circle">
@@ -67,25 +67,7 @@
 </section>
 
 <style>
-	.qualities-wrapper {
-		margin-top: 2.5rem;
-		margin-bottom: 0;
-		position: absolute;
-		top: 100vh;
-		/* aufpassen wenn es snappt dann hier svh oder dvh */
-		width: 100%;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-	}
-	.qualities {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-	}
-	.qualities-section {
+	.qualities-section, .qualities {
 		display: flex;
 		flex-direction: column;
 		align-items: center;

@@ -17,7 +17,7 @@
 
 <style>
 	.content-wrapper {
-		margin-top: 1.5rem;
+		margin-top: 5rem;
 		margin-bottom: -1;
 		position: absolute;
 		top: 105dvh;

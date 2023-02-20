@@ -1,23 +1,17 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
 
 	let mobileNavButton: any;
 	let mobileNav: any;
 
 	function toggleMobileNav() {
 		if (mobileNavButton.getAttribute('aria-expanded') === 'true') {
-
 			mobileNavButton.setAttribute('aria-expanded', 'false');
 			mobileNav.setAttribute('aria-expanded', 'false');
-
-
 		} else {
-
 			mobileNavButton.setAttribute('aria-expanded', 'true');
 			mobileNav.setAttribute('aria-expanded', 'true');
-			
 		}
-		console.log(mobileNav.getAttribute('aria-expanded'))
+		console.log(mobileNav.getAttribute('aria-expanded'));
 	}
 </script>
 
@@ -28,7 +22,7 @@
 		on:keydown={() => {
 			return;
 		}}
-		aria-expanded='true'
+		aria-expanded="true"
 		xmlns="http://www.w3.org/2000/svg"
 		fill="none"
 		viewBox="0 0 24 24"
@@ -52,8 +46,8 @@
 		class="right-nav"
 	>
 		<a href="#qualities">Features</a>
-		<a href="/">Fuer Unternehme</a>
-		<a href="/" class="login-button">Login</a>
+		<a href="/">Für Unternehmen</a>
+		<a href="/login" class="login-button">Login</a>
 	</div>
 </nav>
 
@@ -67,7 +61,6 @@
 	}
 	.right-nav {
 		position: fixed;
-		/* inset: 0 20% 0 0; */
 		width: 100%;
 		height: 100%;
 		z-index: 1000;
@@ -76,7 +69,6 @@
 		flex-direction: column;
 		transform: translateX(0);
 		transition: transform 0.4s ease-in-out;
-		
 	}
 	.right-nav[aria-expanded='true'] {
 		transform: translateX(-100%);
@@ -93,6 +85,7 @@
 		transition: transform 0.3s ease;
 	}
 	.mobile-nav-button-open[aria-expanded='true'] {
+		z-index: 9999;
 		transform: rotate(-135deg);
 	}
 	.right-nav > a {
@@ -101,11 +94,35 @@
 		background-color: blue;
 		color: white;
 		margin-inline: auto;
-
 	}
 	@media (min-width: 800px) {
+		
 		nav {
-			background-color: red;
+			position: static;
+			display: flex;
+			justify-content: space-between;
+			margin: 0;
+			padding: 0;
+		}
+		.right-nav {
+			display: flex;
+			position: static;
+			flex-direction: row;
+			transform: translateX(0);
+			margin: 0;
+			padding: 0;
+			justify-content: flex-end;
+			width: auto;
+			height: auto;
+		}
+		.mobile-nav-button-open {
+			display: none;
+		}
+		.right-nav > a {
+			width: auto;
+			height: auto;
+			margin: 0;
+			padding: 0;
 		}
 	}
 </style>

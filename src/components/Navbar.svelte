@@ -139,6 +139,7 @@
 			margin-left: 3rem;
 			border-radius: 10px;
 			margin-top: 1rem;
+			margin-bottom: 1rem;
 			margin-right: 1.75rem;
 			-webkit-box-shadow: 5px 5px 19px 3px rgba(0, 0, 0, 0.55);
 			box-shadow: 5px 5px 19px 3px rgba(0, 0, 0, 0.55);

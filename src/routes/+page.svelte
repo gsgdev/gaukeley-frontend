@@ -2,14 +2,14 @@
 	import Navbar from '../components/Navbar.svelte';
 	import Hero from '../components/Hero.svelte';
 	import Qualities from '../components/Qualities.svelte';
-
+	import Line from '../components/Line.svelte';
 </script>
 
 <div class="body">
 	<Navbar />
 
 	<Hero />
-
+	<Line />
 	<div class="content-wrapper">
 		<Qualities />
 	</div>

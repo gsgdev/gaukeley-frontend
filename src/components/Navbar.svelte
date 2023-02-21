@@ -29,7 +29,11 @@
 		stroke="currentColor"
 		class="mobile-nav-button-open"
 	>
-		<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+		<path
+			stroke-linecap="round"
+			stroke-linejoin="round"
+			d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+		/>
 	</svg>
 
 	<div class="left-nav">
@@ -49,6 +53,7 @@
 		<a href="/login" class="login-button">Login</a>
 	</div>
 </nav>
+
 
 <style>
 	nav {
@@ -80,19 +85,27 @@
 		width: 2.5rem;
 		aspect-ratio: 1;
 		z-index: 9999;
-		transform: none;
+		transform: rotate(90deg);
 		transition: transform 0.3s ease;
 	}
 	.mobile-nav-button-open[aria-expanded='true'] {
 		z-index: 9999;
-		transform: rotate(-135deg);
+		transform: rotate(0);
 	}
 	.right-nav > a {
 		padding: 0.5rem 2.75rem 0.5rem 2.75rem;
 		margin-top: 20dvh;
-		background-color: blue;
-		color: white;
+		background-color: white;
+		color: black;
 		margin-inline: auto;
+		border-radius: 10px;
+		border: 1px solid black;
+		padding: 1rem 1rem 1rem 1rem;
+		-webkit-box-shadow: 5px 5px 19px 3px rgba(0, 0, 0, 0.55);
+		box-shadow: 5px 5px 19px 3px rgba(0, 0, 0, 0.55);
+	}
+	.right-nav > a:hover {
+		text-decoration: none;
 	}
 	@media (min-width: 800px) {
 		nav {
@@ -122,9 +135,18 @@
 			width: auto;
 			height: auto;
 			margin: 0;
-			padding: 1rem 0 0 0;
+			padding: 1rem 1rem 1rem 1rem;
 			margin-left: 3rem;
 			border-radius: 10px;
+			margin-top: 1rem;
+			margin-right: 1.75rem;
+			-webkit-box-shadow: 5px 5px 19px 3px rgba(0, 0, 0, 0.55);
+			box-shadow: 5px 5px 19px 3px rgba(0, 0, 0, 0.55);
+			transition: box-shadow 0.3s ease, -webkit-box-shadow 0.3s ease;
+		}
+		.right-nav > a:hover {
+			-webkit-box-shadow: 6px 5px 15px -3px rgba(0, 0, 0, 0.67);
+			box-shadow: 6px 5px 15px -3px rgba(0, 0, 0, 0.67);
 		}
 		.right-nav[aria-expanded='true'] {
 			transform: translateX(0);

@@ -21,7 +21,6 @@
 		margin-bottom: -1;
 		position: absolute;
 		top: 105dvh;
-		/* aufpassen wenn es snappt dann hier svh oder dvh */
 		width: 99%;
 		display: flex;
 		flex-direction: column;

@@ -1,6 +1,6 @@
 <section id="hero" class="hero">
-	<h1 class="hero-title">SUSBANK</h1>
-	<p class="hero-subtitle">Das Bank kann meh­re­re.</p>
+	<h1 class="hero-title">GSGBANK</h1>
+	<p class="hero-subtitle">Die Bank ihres Vertrauens.</p>
 </section>
 <style>
 	.hero {

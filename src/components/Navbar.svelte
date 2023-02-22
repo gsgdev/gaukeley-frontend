@@ -50,10 +50,9 @@
 	>
 		<a href="#qualities">Features</a>
 		<a href="/">Für Unternehmen</a>
-		<a href="/login" class="login-button">Login</a>
+		<a href="/login" id="login-button">LOGIN</a>
 	</div>
 </nav>
-
 
 <style>
 	nav {
@@ -107,15 +106,22 @@
 	.right-nav > a:hover {
 		text-decoration: none;
 	}
+	#login-button {
+		text-decoration: none;
+		font-weight: bold;
+		font-size: 1.25rem;
+		border: 5px solid rgb(240, 68, 108);
+		background-color: white;
+		color: rgb(240, 68, 108);
+		transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+	}
 	@media (min-width: 800px) {
 		nav {
 			position: static;
 			display: flex;
 			justify-content: space-between;
 			margin: 0;
-			padding: 0;
-			/* width: 100%;
-			height: 100%; */
+			padding: 1rem 0.5rem 1rem 1rem;
 		}
 		.right-nav {
 			display: flex;
@@ -134,13 +140,10 @@
 		.right-nav > a {
 			width: auto;
 			height: auto;
-			margin: 0;
-			padding: 1rem 1rem 1rem 1rem;
-			margin-left: 3rem;
+			display: flex;
+			margin: auto 1.75rem auto 0;
 			border-radius: 10px;
-			margin-top: 1rem;
-			margin-bottom: 1rem;
-			margin-right: 1.75rem;
+			vertical-align: middle;
 			-webkit-box-shadow: 5px 5px 19px 3px rgba(0, 0, 0, 0.55);
 			box-shadow: 5px 5px 19px 3px rgba(0, 0, 0, 0.55);
 			transition: box-shadow 0.3s ease, -webkit-box-shadow 0.3s ease;
@@ -151,6 +154,20 @@
 		}
 		.right-nav[aria-expanded='true'] {
 			transform: translateX(0);
+		}
+		#login-button {
+			margin: auto 1rem auto 0;
+			text-decoration: none;
+			font-weight: bold;
+			font-size: 1.25rem;
+			border: 5px solid rgb(240, 68, 108);
+			background-color: white;
+			color: rgb(240, 68, 108);
+			transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+		}
+		#login-button:hover {
+			color: white;
+			background-color: rgb(240, 68, 108);
 		}
 	}
 </style>

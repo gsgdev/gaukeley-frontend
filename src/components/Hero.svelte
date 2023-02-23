@@ -83,12 +83,14 @@
 	.hero-content-wrapper-before-intersecting {
 		opacity: 0;
 		transform: translateY(1rem);
-		transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+		/* filter: blur(1 px); */
+		transition: all 1s ease-in-out;
 		margin: 0 0 0 10dvw;
 
 	}
 	.hero-content-wrapper {
 		opacity: 1;
+		filter: blur(0);
 		transform: translateY(0);
 	}
 	@media (min-width: 800px) {

@@ -54,7 +54,7 @@
 	</div>
 </nav>
 
-<style>
+<style lang="scss">
 	nav {
 		font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
 			Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -110,9 +110,9 @@
 		text-decoration: none;
 		font-weight: bold;
 		font-size: 1.25rem;
-		border: 5px solid rgb(240, 68, 108);
+		border: 5px solid blue;
 		background-color: white;
-		color: rgb(240, 68, 108);
+		color: blue;
 		transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
 	}
 	@media (min-width: 800px) {
@@ -160,9 +160,9 @@
 			text-decoration: none;
 			font-weight: bold;
 			font-size: 1.25rem;
-			border: 5px solid rgb(240, 68, 108);
+			border: 5px solid blue;
 			background-color: white;
-			color: rgb(240, 68, 108);
+			color: blue; 
 			-webkit-box-shadow: 5px 5px 19px 3px rgba(0, 0, 0, 0.55);
 			box-shadow: 5px 5px 19px 3px rgba(0, 0, 0, 0.55);
 			transition: color 0.25s ease-in-out, background-color 0.25s ease-in-out;
@@ -171,7 +171,7 @@
 			-webkit-box-shadow: 5px 5px 19px 3px rgba(0, 0, 0, 0.55);
 			box-shadow: 5px 5px 19px 3px rgba(0, 0, 0, 0.55);
 			color: white;
-			background-color: rgb(240, 68, 108);
+			background-color: blue; 
 		}
 	}
 </style>

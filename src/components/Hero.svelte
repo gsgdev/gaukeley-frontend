@@ -86,7 +86,6 @@
 		/* filter: blur(1 px); */
 		transition: all 1s ease-in-out;
 		margin: 0 0 0 10dvw;
-
 	}
 	.hero-content-wrapper {
 		opacity: 1;
@@ -120,4 +119,10 @@
 			transform: perspective(5000px) rotateY(var(--rotateX)) rotateX(var(--rotateY));
 		}
 	}
+	/* login button gradient
+	background: rgb(54,54,255);
+background: -moz-linear-gradient(149deg, rgba(54,54,255,1) 0%, rgba(0,152,255,1) 50%, rgba(0,208,255,1) 100%);
+background: -webkit-linear-gradient(149deg, rgba(54,54,255,1) 0%, rgba(0,152,255,1) 50%, rgba(0,208,255,1) 100%);
+background: linear-gradient(149deg, rgba(54,54,255,1) 0%, rgba(0,152,255,1) 50%, rgba(0,208,255,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3636ff",endColorstr="#00d0ff",GradientType=1); */
 </style>

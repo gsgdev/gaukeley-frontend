@@ -3,16 +3,18 @@
 	import Hero from '../components/Hero.svelte';
 	import Qualities from '../components/Qualities.svelte';
 	import Line from '../components/Line.svelte';
+	import Quotes from '../components/Quotes.svelte';
 </script>
 
-<div class="body">
-	<Navbar />
+<Navbar />
 
-	<Hero />
-	<Line />
-	<div class="content-wrapper">
-		<Qualities />
-	</div>
+<Hero />
+<Line />
+
+<div class="content-wrapper">
+	<Qualities />
+
+	<Quotes />
 </div>
 
 <style>

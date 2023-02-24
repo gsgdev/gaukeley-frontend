@@ -96,6 +96,7 @@
 		filter: blur(0);
 		transform: translateY(0);
 	}
+	/* large screens */
 	@media (min-width: 800px) {
 		.hero-title {
 			font-size: 6rem;
@@ -104,6 +105,7 @@
 			font-size: 2.75rem;
 		}
 	}
+	/* for really large screens */
 	@media (min-width: 1250px) {
 		.hero {
 			display: flex;

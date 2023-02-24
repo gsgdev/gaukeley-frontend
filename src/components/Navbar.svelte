@@ -102,6 +102,7 @@
 		padding: 1rem 1rem 1rem 1rem;
 		-webkit-box-shadow: 5px 5px 19px 3px rgba(0, 0, 0, 0.55);
 		box-shadow: 5px 5px 19px 3px rgba(0, 0, 0, 0.55);
+		text-decoration: none;
 	}
 	.right-nav > a:hover {
 		text-decoration: none;

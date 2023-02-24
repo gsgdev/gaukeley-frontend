@@ -1,5 +1,9 @@
 <section id="qualities" class="qualities-wrapper">
+	<div class="tutorial-wrapper">
+		Keine Ahnung was du hier machen sollst? Klicke <a href="/">hier</a>.
+	</div>
 	<div class="qualities">
+		<h1 class="qualities-header">Unsere Qualitäten</h1>
 		<div class="qualities-section">
 			<p class="circle">
 				<svg
@@ -67,7 +71,18 @@
 </section>
 
 <style>
-	.qualities-section, .qualities {
+	.tutorial-wrapper {
+		text-align: center;
+		font-size: 2rem;
+		margin: 0 0 30dvh 0;
+	}
+	.qualities-header {
+		text-align: center;
+		margin: 0 0 5rem 0;
+		font-size: 4rem;
+	}
+	.qualities-section,
+	.qualities {
 		display: flex;
 		flex-direction: column;
 		align-items: center;

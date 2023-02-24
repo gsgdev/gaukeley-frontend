@@ -7,6 +7,10 @@
 	}
 </script>
 
+<svelte:head>
+	<title>GSGBANK | LOGIN</title>
+</svelte:head>
+
 <h1 class="header">GSGBANK</h1>
 
 <div class="login-wrapper">

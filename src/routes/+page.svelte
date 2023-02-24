@@ -6,6 +6,10 @@
 	import Quotes from '../components/Quotes.svelte';
 </script>
 
+<svelte:head>
+	<title>GSGBANK</title>
+</svelte:head>
+
 <Navbar />
 
 <Hero />

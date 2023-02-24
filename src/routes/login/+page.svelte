@@ -7,39 +7,49 @@
 	}
 </script>
 
+<h1 class="header">GSGBANK</h1>
+
 <div class="login-wrapper">
 	<form on:submit|preventDefault={handleSubmit}>
-		<div>
-			<label for="username">Username:</label>
-			<input type="text" id="username" bind:value={username} />
-		</div>
-		<div>
-			<label for="password">Password:</label>
-			<input type="password" id="password" bind:value={password} />
-		</div>
+		<input placeholder="Benutzername" type="text" id="username" bind:value={username} />
+		<input placeholder="Passwort" type="password" id="password" bind:value={password} />
 		<button class="submit-button" type="submit">Submit</button>
 	</form>
 </div>
 
 <style>
 	:global(body) {
-		background-image: none;
+		width: 100dvw;
+		height: 100dvh;
+		background-image: url('/src/lib/images/gradient_background.svg');
+		background-size: cover;
+	}
+	.header {
+		width: 100dvw;
+		position: absolute;
+		font-size: 5rem;
+		text-align: center;
 	}
 	form {
 		font-size: 3rem;
 		display: block;
+		width: 70dvw;
 	}
-	label {
-		padding: 1rem 1rem 1rem 1rem;
+	input {
+		width: 100%;
+		padding: 1rem;
+		border-radius: 10px;
+		border: 3px solid black;
 	}
 
 	.login-wrapper {
-		width: 100%;
+		width: 100dvw;
+		height: 100dvh;
 		display: flex;
-		flex-direction: row;
 		justify-content: space-around;
-		margin-top: 50dvh;
+		align-items: center;
 	}
+
 	.submit-button {
 		width: 100%;
 		margin: 2rem 0 0 0;
@@ -53,6 +63,7 @@
 		border-radius: 10px;
 		padding: 10px;
 		transition: background-color 0.3s;
+		cursor: pointer;
 	}
 	.submit-button:hover {
 		background-color: blue;

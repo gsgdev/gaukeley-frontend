@@ -1,5 +1,5 @@
 <section class="quotes">
-    Hier kommen lustige Zitate hin, oder irgentwas anderes lustiges
+    Hier kommen lustige Zitate hin, oder irgendwas anderes lustiges
 </section>
 
 <style>

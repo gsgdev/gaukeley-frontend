@@ -17,7 +17,7 @@
 			<label for="password">Password:</label>
 			<input type="password" id="password" bind:value={password} />
 		</div>
-		<button type="submit">Submit</button>
+		<button class="submit-button" type="submit">Submit</button>
 	</form>
 </div>
 
@@ -26,9 +26,35 @@
 		background-image: none;
 	}
 	form {
+		font-size: 3rem;
 		display: block;
 	}
+	label {
+		padding: 1rem 1rem 1rem 1rem;
+	}
+
 	.login-wrapper {
-		margin: auto auto auto auto;
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		margin-top: 50dvh;
+	}
+	.submit-button {
+		width: 100%;
+		margin: 2rem 0 0 0;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		background-color: rgb(52, 165, 235);
+		border: none;
+		font-size: 4rem;
+		color: white;
+		border-radius: 10px;
+		padding: 10px;
+		transition: background-color 0.3s;
+	}
+	.submit-button:hover {
+		background-color: blue;
 	}
 </style>

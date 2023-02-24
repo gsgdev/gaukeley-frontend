@@ -62,17 +62,21 @@
 
 <style>
 	.hero {
+		display: flex;
 		position: absolute;
-		width: 100%;
+		/* width: 100%; */
+		margin: 0 0 0 0;
 		text-align: center;
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
 	}
 	.hero-title {
+		text-align: center;
 		font-size: 4rem;
 	}
 	.hero-subtitle {
+		text-align: center;
 		font-size: 1.75rem;
 		padding-left: 10px;
 		padding-right: 10px;
@@ -85,7 +89,7 @@
 		transform: translateY(1rem);
 		/* filter: blur(1 px); */
 		transition: all 1s ease-in-out;
-		margin: 0 0 0 10dvw;
+		margin: 0 0 0 0;
 	}
 	.hero-content-wrapper {
 		opacity: 1;
@@ -106,7 +110,9 @@
 			flex-direction: row;
 			justify-content: space-around;
 		}
-
+		.hero-content-wrapper-before-intersecting {
+			margin: 0 10dvw 0 0;
+		}
 		.card-wrapper {
 			display: flex;
 			margin: auto 0 auto 0;

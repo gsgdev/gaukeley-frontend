@@ -71,7 +71,6 @@
 	}
 	.header {
 		width: 100%;
-		/* position: absolute; */
 		font-size: 3rem;
 		text-align: center;
 	}
@@ -136,7 +135,7 @@
 		justify-content: space-around;
 		background-color: rgb(52, 165, 235);
 		border: none;
-		font-size: 4rem;
+		font-size: 3rem;
 		color: white;
 		border-radius: 10px;
 		padding: 10px;

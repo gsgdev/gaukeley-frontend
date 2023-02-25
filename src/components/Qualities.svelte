@@ -98,7 +98,6 @@
 	}
 	.lock-icon {
 		position: absolute;
-		width: 10rem;
 		aspect-ratio: 1;
 		stroke-width: 0.9px;
 		bottom: 5px;

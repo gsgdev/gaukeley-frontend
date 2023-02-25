@@ -15,8 +15,15 @@
 
 <div class="login-wrapper">
 	<form on:submit|preventDefault={handleSubmit}>
-		<input placeholder="Benutzername" type="text" id="username" bind:value={username} />
-		<input placeholder="Passwort" type="password" id="password" bind:value={password} />
+		<label for="username">Benutzername</label>
+		<div class="input-wrapper">
+			<input placeholder="Benutzername" type="text" id="username" bind:value={username} />
+		</div>
+		
+		<label for="password">Passwort</label>
+		<div class='input-wrapper'>
+			<input placeholder="Passwort" type="password" id="password" bind:value={password} />
+		</div>
 		<button class="submit-button" type="submit">Submit</button>
 	</form>
 </div>
@@ -43,7 +50,27 @@
 		width: 100%;
 		padding: 1rem;
 		border-radius: 10px;
-		border: 3px solid black;
+		border: none;
+		font-size: 1.5rem;
+	}
+	.input-wrapper::after {
+		content: '';
+		display: block;
+		height: 2px;
+		background: black;
+		width: 0;
+		bottom: 0;
+		transition: width 0.3 ease-in-out;
+
+	}
+	input:focus {
+		border: none;
+	}
+	.input-wrapper:focus::after {
+		width: 100%;
+	}
+	label {
+		font-size: 2rem;
 	}
 
 	.login-wrapper {

@@ -63,21 +63,24 @@
 
 <style>
 	:global(body) {
-		width: 100dvw;
-		height: 100dvh;
+		width: 100vw;
+		height: 100vh;
 		background-image: url('/src/lib/images/gradient_background.svg');
 		background-size: cover;
+		overflow-y: hidden;
 	}
 	.header {
-		width: 100dvw;
-		position: absolute;
-		font-size: 5rem;
+		width: 100%;
+		/* position: absolute; */
+		font-size: 3rem;
 		text-align: center;
 	}
 	form {
 		font-size: 3rem;
+		position: static;
 		display: block;
-		width: 70dvw;
+		width: auto;
+		margin: 0 0.4rem 0 0.4rem;
 	}
 	input {
 		width: 100%;

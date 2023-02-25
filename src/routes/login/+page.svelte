@@ -61,7 +61,9 @@
 	</form>
 </div>
 
-<style>
+<style lang="scss">
+	$clr-login-button: #42A0FF;
+
 	:global(body) {
 		width: 100%;
 		height: 100%;
@@ -133,16 +135,18 @@
 		display: flex;
 		flex-direction: row;
 		justify-content: space-around;
-		background-color: rgb(52, 165, 235);
-		border: none;
+		background-color: white;
+		border: 4px solid $clr-login-button;
 		font-size: 3rem;
-		color: white;
+		color: $clr-login-button;
 		border-radius: 10px;
+		font-weight: bold;
 		padding: 10px;
 		transition: background-color 0.3s;
 		cursor: pointer;
 	}
 	.submit-button:hover {
-		background-color: blue;
+		background-color: $clr-login-button;
+		color: white;
 	}
 </style>

@@ -55,7 +55,9 @@
 </nav>
 
 <style lang="scss">
+	$clr-login-button: #42A0FF;
 	nav {
+
 		font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
 			Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 		display: flex;
@@ -111,9 +113,9 @@
 		text-decoration: none;
 		font-weight: bold;
 		font-size: 1.25rem;
-		border: 5px solid blue;
+		border: 5px solid $clr-login-button;
 		background-color: white;
-		color: blue;
+		color: $clr-login-button;
 		transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
 	}
 	@media (min-width: 800px) {
@@ -161,9 +163,9 @@
 			text-decoration: none;
 			font-weight: bold;
 			font-size: 1.25rem;
-			border: 5px solid blue;
+			border: 5px solid $clr-login-button;
 			background-color: white;
-			color: blue; 
+			color: $clr-login-button; 
 			-webkit-box-shadow: 5px 5px 19px 3px rgba(0, 0, 0, 0.55);
 			box-shadow: 5px 5px 19px 3px rgba(0, 0, 0, 0.55);
 			transition: color 0.25s ease-in-out, background-color 0.25s ease-in-out;
@@ -172,7 +174,7 @@
 			-webkit-box-shadow: 5px 5px 19px 3px rgba(0, 0, 0, 0.55);
 			box-shadow: 5px 5px 19px 3px rgba(0, 0, 0, 0.55);
 			color: white;
-			background-color: blue; 
+			background-color: $clr-login-button; 
 		}
 	}
 </style>

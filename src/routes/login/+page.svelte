@@ -63,11 +63,11 @@
 
 <style>
 	:global(body) {
-		width: 100vw;
-		height: 100vh;
+		width: 100%;
+		height: 100%;
 		background-image: url('/src/lib/images/gradient_background.svg');
 		background-size: cover;
-		overflow-y: hidden;
+		overflow-x: hidden;
 	}
 	.header {
 		width: 100%;
@@ -120,11 +120,12 @@
 	}
 
 	.login-wrapper {
-		width: 100dvw;
-		height: 100dvh;
+		width: 100%;
+		height: 100%;
 		display: flex;
 		justify-content: space-around;
 		align-items: center;
+		margin: 20% 0 0 0;
 	}
 
 	.submit-button {

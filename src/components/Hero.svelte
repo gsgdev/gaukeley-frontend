@@ -87,7 +87,6 @@
 	.hero-content-wrapper-before-intersecting {
 		opacity: 0;
 		transform: translateY(1rem);
-		/* filter: blur(1 px); */
 		transition: all 1s ease-in-out;
 		margin: 0 0 0 0;
 	}
@@ -103,6 +102,12 @@
 		}
 		.hero-subtitle {
 			font-size: 2.75rem;
+			padding: 1.5rem 0 0 0;
+		}
+		.hero-content-wrapper {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
 		}
 	}
 	/* for really large screens */
@@ -114,6 +119,10 @@
 		}
 		.hero-content-wrapper-before-intersecting {
 			margin: 0 10dvw 0 0;
+			padding-bottom: 0;
+		}
+		.hero-content-wrapper {
+			padding: 0;
 		}
 		.card-wrapper {
 			display: flex;

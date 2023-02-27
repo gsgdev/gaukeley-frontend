@@ -54,7 +54,7 @@
 	</div>
 
 	<div bind:this={card} class="card-wrapper">
-		<img class="card" src="/schollkassenkarte_new.png" alt="Schollkassen Karte" />
+		<img draggable="false" class="card" src="/schollkassenkarte_new.png" alt="Schollkassen Karte" />
 	</div>
 </section>
 

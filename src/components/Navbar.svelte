@@ -64,6 +64,11 @@
 		flex-direction: row;
 		justify-content: space-between;
 	}
+	.left-nav {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
 	.right-nav {
 		position: fixed;
 		width: 100%;

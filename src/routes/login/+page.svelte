@@ -38,7 +38,7 @@
 		</div>
 		<label for="password">Passwort</label>
 
-		<div class="underline">
+		<div class="underline login-center">
 			<div class="input-wrapper">
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
@@ -62,7 +62,7 @@
 </div>
 
 <style lang="scss">
-	$clr-login-button: #42A0FF;
+	$clr-login-button: #42a0ff;
 
 	:global(body) {
 		width: 100%;
@@ -71,10 +71,13 @@
 		background-size: cover;
 		overflow-x: hidden;
 	}
+
 	.header {
 		width: 100%;
 		font-size: 3rem;
 		text-align: center;
+		position: absolute;
+		font-weight: bold;
 	}
 	form {
 		font-size: 3rem;
@@ -121,12 +124,11 @@
 	}
 
 	.login-wrapper {
-		width: 100%;
-		height: 100%;
+		height: 100vh;
 		display: flex;
-		justify-content: space-around;
-		align-items: center;
-		margin: 20% 0 0 0;
+		flex-direction: column;
+		justify-content: center;
+		margin: 0 0.5rem 0 0.5rem;
 	}
 
 	.submit-button {
@@ -148,5 +150,10 @@
 	.submit-button:hover {
 		background-color: $clr-login-button;
 		color: white;
+	}
+	@media (min-width: 800px) {
+		.login-wrapper {
+			margin: 0 3rem 0 3rem;
+		}
 	}
 </style>

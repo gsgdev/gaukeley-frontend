@@ -48,7 +48,7 @@
 </script>
 
 <section id="hero" class="hero">
-	<div bind:this={heroContent} class=" hero-content-wrapper-before-intersecting">
+    <div bind:this={heroContent} class="hero-content-wrapper hero-content-wrapper-before-intersecting">
 		<h1 class="hero-title">GSGBANK</h1>
 		<p class="hero-subtitle">Die Bank ihres Vertrauens.</p>
 	</div>

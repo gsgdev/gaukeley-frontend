@@ -37,16 +37,18 @@
 	</svg>
 
 	<div class="left-nav">
-		<p>logo</p>
-	</div>
-	<div
-		on:click={toggleMobileNav}
-		bind:this={mobileNav}
-		on:keydown={() => {
-			return;
-		}}
-		aria-expanded="true"
-		class="right-nav"
+        <div class='logo-wrapper'>     
+            <img class='logo' alt='logo' src='/logo.png'>
+        </div>
+    </div>
+        <div
+            on:click={toggleMobileNav}
+            bind:this={mobileNav}
+            on:keydown={() => {
+                return;
+            }}
+            aria-expanded="true"
+            class="right-nav"
 	>
 		<a href="#qualities">Features</a>
 		<a href="/">Für Unternehmen</a>
@@ -69,6 +71,10 @@
 		flex-direction: column;
 		justify-content: center;
 	}
+    .logo {
+        max-width: 6rem;
+        margin: 1rem 0 0 0;
+    }
 	.right-nav {
 		position: fixed;
 		width: 100%;
@@ -130,7 +136,16 @@
 			justify-content: space-between;
 			margin: 0;
 			padding: 1rem 0.5rem 1rem 1rem;
+
 		}
+        .logo-wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .logo {
+            margin: 0;
+        }
 		.right-nav {
 			display: flex;
 			position: static;

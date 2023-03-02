@@ -77,6 +77,7 @@
         overflow-x: hidden;
 
     }
+
     .flex-horizontal-center {
         height: 100%;
         display: flex;
@@ -91,6 +92,7 @@
         display: none;
     }
     .header {
+        display: none;
         width: 100%;
         font-size: 3rem;
         text-align: center;

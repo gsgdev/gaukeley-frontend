@@ -127,19 +127,14 @@
 		.card-wrapper {
 			display: flex;
 			margin: auto 0 auto 0;
+            transform: scale(1.2);
 		}
 		.card {
 			top: 70rem;
 			width: auto;
 			height: auto;
 			max-height: 20dvw;
-			transform: perspective(5000px) rotateY(var(--rotateX)) rotateX(var(--rotateY));
+			transform: perspective(5000px) rotateY(var(--rotateX)) rotateX(var(--rotateY)) ;
 		}
 	}
-	/* login button gradient
-	background: rgb(54,54,255);
-background: -moz-linear-gradient(149deg, rgba(54,54,255,1) 0%, rgba(0,152,255,1) 50%, rgba(0,208,255,1) 100%);
-background: -webkit-linear-gradient(149deg, rgba(54,54,255,1) 0%, rgba(0,152,255,1) 50%, rgba(0,208,255,1) 100%);
-background: linear-gradient(149deg, rgba(54,54,255,1) 0%, rgba(0,152,255,1) 50%, rgba(0,208,255,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3636ff",endColorstr="#00d0ff",GradientType=1); */
 </style>

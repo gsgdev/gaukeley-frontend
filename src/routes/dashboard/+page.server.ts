@@ -5,7 +5,7 @@ export const load = (async ({ cookies }) => {
     
     const sessionId = cookies.get("session-id")
 
-    if (sessionId === undefined) {throw redirect(302, '/')}
+    if (sessionId === undefined) {throw redirect(302, '/login')}
 
     return {
         post: {

@@ -33,8 +33,8 @@
 		justify-content: center;
 	}
 	.content-wrapper {
-		width: 100%;
-		height: 100%;
+        max-width: 100%;
+		max-height: 100%;
 	}
 
 	.login-wrapper {
@@ -56,7 +56,9 @@
 		.content-wrapper {
 			display: grid;
 			grid-template-columns: repeat(2, 1fr);
-			border: 5px solid red;
+            border-radius: 10px;
+			border: 5px solid black;
+            height: 100%;
 		}
 		.login-wrapper {
 			padding: 5%;

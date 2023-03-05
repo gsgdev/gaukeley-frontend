@@ -8,6 +8,7 @@
 </script>
 
 <form on:submit|preventDefault={handleSubmit}>
+    <h1 class="login-header margin-bottom">GSGSBANK Login</h1>
 	<label for="username">Benutzername</label>
 	<div class="underline">
 		<div class="input-wrapper">
@@ -58,83 +59,91 @@
 <style lang="scss">
 	$clr-login-button: #42a0ff;
 
-	.margin-top {
-		margin: 1rem 0 0 0;
-	}
-	form {
-		font-size: 3rem;
-		position: static;
-		display: block;
-		width: auto;
-		margin: 0 0.4rem 0 0.4rem;
-	}
-	input {
-		width: 100%;
-		padding: 1rem;
-		border: none;
-		font-size: 1.5rem;
-	}
-	.icon {
-		background-color: white;
-		width: 3rem;
-		padding: 0 0 0 0.5rem;
-	}
-	.input-wrapper {
-		display: flex;
-		flex-direction: row;
-		border-radius: 20px;
-	}
-	.icon {
-		border-top-left-radius: 10px;
-		border-bottom-left-radius: 10px;
-	}
-	input {
-		border-top-right-radius: 10px;
-		border-bottom-right-radius: 10px;
-	}
-	.underline::after {
-		content: '';
-		display: block;
-		height: 2px;
-		background: black;
-		width: 0%;
-		bottom: 0;
-		transition: width 0.25s ease-in-out;
-	}
-	input:focus {
-		border: none;
-		outline: none;
-	}
-	.underline:focus-within::after {
-		content: '';
-		width: 100%;
-	}
-	label {
-		font-size: 2rem;
-	}
-	.submit-button {
-		width: 50%;
-		margin: 2rem 0 0 0;
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		background-color: white;
-		border: 4px solid $clr-login-button;
-		font-size: 2rem;
-		color: $clr-login-button;
-		border-radius: 10px;
-		font-weight: bold;
-		padding: 10px;
-		transition: background-color 0.2s ease-in-out;
-		cursor: pointer;
-	}
-	.submit-button:hover {
-		background-color: $clr-login-button;
-		color: white;
-	}
-	.submit-button-wrapper {
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-	}
+    .login-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .margin-bottom {
+        margin: 0 0 4rem 0;
+    }
+    .margin-top {
+        margin: 1rem 0 0 0;
+    }
+    form {
+        font-size: 3rem;
+        position: static;
+        display: block;
+        width: auto;
+        margin: 0 0.4rem 0 0.4rem;
+    }
+    input {
+        width: 100%;
+        padding: 1rem;
+        border: none;
+        font-size: 1.5rem;
+    }
+    .icon {
+        background-color: white;
+        width: 3rem;
+        padding: 0 0 0 0.5rem;
+    }
+    .input-wrapper {
+        display: flex;
+        flex-direction: row;
+        border-radius: 20px;
+    }
+    .icon {
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    input {
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    .underline::after {
+        content: '';
+        display: block;
+        height: 2px;
+        background: black;
+        width: 0%;
+        bottom: 0;
+        transition: width 0.25s ease-in-out;
+    }
+    input:focus {
+        border: none;
+        outline: none;
+    }
+    .underline:focus-within::after {
+        content: '';
+        width: 100%;
+    }
+    label {
+        font-size: 2rem;
+    }
+    .submit-button {
+        width: 50%;
+        margin: 2rem 0 0 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: white;
+        border: 4px solid $clr-login-button;
+        font-size: 2rem;
+        color: $clr-login-button;
+        border-radius: 10px;
+        font-weight: bold;
+        padding: 10px;
+        transition: background-color 0.2s ease-in-out;
+        cursor: pointer;
+    }
+    .submit-button:hover {
+        background-color: $clr-login-button;
+        color: white;
+    }
+    .submit-button-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
 </style>

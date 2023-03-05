@@ -1,7 +1,13 @@
 <h1 class="header">GSGBANK</h1>
 
+<!--! IMPORTANT: Not sure if we use that -->
+
 <style>
+
 	.header {
+		display: none;
+	}
+	/* .header {
 		display: static;
 		width: 100%;
 		font-size: 3rem;
@@ -10,9 +16,9 @@
 		font-weight: bold;
 	}
 
-    @media (min-width: 1200px) { 
-        .header {
-            display: none;
-        }
-    }
+	@media (ma-width: 1200px) {
+		.header {
+			display: none;
+		}
+	} */
 </style>

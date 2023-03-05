@@ -9,4 +9,6 @@
 	<title>GSGBANK | DASHBOARD</title>
 </svelte:head>
 
+
+<h1>Your : {data.post.user}</h1>
 <h1>Your session id is: {data.post.session}</h1>

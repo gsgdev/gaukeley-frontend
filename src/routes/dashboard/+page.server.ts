@@ -7,6 +7,8 @@ export const load = (async ({ cookies }) => {
 
     if (sessionId === undefined) {throw redirect(302, '/login')}
 
+    // const validUser = await fetch("https://www.philippdev.de/")
+
     return {
         post: {
             session: sessionId,

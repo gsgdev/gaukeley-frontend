@@ -1,17 +1,20 @@
 <div class="img-wrapper">
-	<p>Img goes here</p>
+    <img src="/school.jpeg" alt="GSG Stuttgart" />
 </div>
 
 <style>
 	.img-wrapper {
 		display: none;
-		border: 2px dotted green;
 	}
 	@media (min-width: 1200px) {
+        img {
+            height: 100%;
+        }
 		.img-wrapper {
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
+            height: 100%;
 		}
 	}
 </style>

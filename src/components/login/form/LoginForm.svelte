@@ -8,7 +8,7 @@
 </script>
 
 <form on:submit|preventDefault={handleSubmit}>
-    <h1 class="login-header margin-bottom">GSGSBANK Login</h1>
+    <h1 class="login-header margin-bottom">Login</h1>
 	<label for="username">Benutzername</label>
 	<div class="underline">
 		<div class="input-wrapper">
@@ -57,12 +57,13 @@
 </form>
 
 <style lang="scss">
-	$clr-login-button: #42a0ff;
+	$clr-login-button: #2172F2;
 
     .login-header {
         display: flex;
         flex-direction: row;
         justify-content: center;
+        text-align: center;
     }
     .margin-bottom {
         margin: 0 0 4rem 0;
@@ -128,7 +129,7 @@
         flex-direction: row;
         justify-content: center;
         background-color: white;
-        border: 4px solid $clr-login-button;
+        border: 5px solid $clr-login-button;
         font-size: 2rem;
         color: $clr-login-button;
         border-radius: 10px;

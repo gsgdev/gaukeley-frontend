@@ -1,5 +1,5 @@
 <div class="img-wrapper">
-    <img src="/school.jpeg" alt="GSG Stuttgart" />
+    <img src="/fernsehturm.png" alt="GSG Stuttgart" />
 </div>
 
 <style>
@@ -12,8 +12,8 @@
         }
 		.img-wrapper {
 			display: flex;
-			flex-direction: column;
-			justify-content: center;
+            flex-direction: row;
+            justify-content: center;
             height: 100%;
 		}
 	}

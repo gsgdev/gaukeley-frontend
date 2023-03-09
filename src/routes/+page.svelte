@@ -21,7 +21,17 @@
 	<Quotes />
 </div>
 
+<div class="ad-box"></div>
+
 <style>
+    .ad-box {
+        background-color: black;
+        width: 5rem; 
+        height: 5rem;
+        position: fixed;
+        bottom: 10px;
+        left: 10px;
+    }
 	.content-wrapper {
 		margin-top: 5rem;
 		margin-bottom: -1;

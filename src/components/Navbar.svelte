@@ -57,7 +57,7 @@
 </nav>
 
 <style lang="scss">
-	$clr-login-button: #42A0FF;
+	$clr-login-button: #2172F2;
 	nav {
 
 		font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,

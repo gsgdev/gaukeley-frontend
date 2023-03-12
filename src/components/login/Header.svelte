@@ -1,9 +1,7 @@
 <h1 class="header">GSGBANK</h1>
 
 <!--! IMPORTANT: Not sure if we use that -->
-
 <style>
-
 	.header {
 		display: none;
 	}

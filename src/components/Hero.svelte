@@ -48,7 +48,10 @@
 </script>
 
 <section id="hero" class="hero">
-    <div bind:this={heroContent} class="hero-content-wrapper hero-content-wrapper-before-intersecting">
+	<div
+		bind:this={heroContent}
+		class="hero-content-wrapper hero-content-wrapper-before-intersecting"
+	>
 		<h1 class="hero-title">GSGBANK</h1>
 		<p class="hero-subtitle">Die Bank ihres Vertrauens.</p>
 	</div>
@@ -127,14 +130,14 @@
 		.card-wrapper {
 			display: flex;
 			margin: auto 0 auto 0;
-            transform: scale(1.2);
+			transform: scale(1.2);
 		}
 		.card {
 			top: 70rem;
 			width: auto;
 			height: auto;
 			max-height: 20dvw;
-			transform: perspective(5000px) rotateY(var(--rotateX)) rotateX(var(--rotateY)) ;
+			transform: perspective(5000px) rotateY(var(--rotateX)) rotateX(var(--rotateY));
 		}
 	}
 </style>

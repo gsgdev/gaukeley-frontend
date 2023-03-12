@@ -15,23 +15,15 @@
 <Hero />
 <Line />
 
-<div class="content-wrapper">
+<div id="content-wrapper" class="content-wrapper">
 	<Qualities />
 
 	<Quotes />
 </div>
 
-<div class="ad-box"></div>
+<div class="ad-box" />
 
 <style>
-    .ad-box {
-        background-color: black;
-        width: 5rem; 
-        height: 5rem;
-        position: fixed;
-        bottom: 10px;
-        left: 10px;
-    }
 	.content-wrapper {
 		margin-top: 5rem;
 		margin-bottom: -1;
@@ -46,5 +38,17 @@
 	:global(body) {
 		background-image: url('/src/lib/images/gradient_background.svg');
 		background-size: cover;
+	}
+	@media (min-width: 1200px) {
+		.ad-box {
+			display: none;
+			background-color: black;
+			width: 25rem;
+			height: 19rem;
+			position: fixed;
+			bottom: 10px;
+			right: 10px;
+			border-radius: 10px;
+		}
 	}
 </style>

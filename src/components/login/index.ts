@@ -1,4 +1,4 @@
-import Header from "./Header.svelte";
-import LoginImage from "./LoginImage.svelte";
+import Header from './Header.svelte';
+import LoginImage from './LoginImage.svelte';
 
-export { Header, LoginImage }
+export { Header, LoginImage };

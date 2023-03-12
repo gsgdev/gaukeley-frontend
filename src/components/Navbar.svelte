@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { onMount } from 'svelte';
+
 	let mobileNavButton: any;
 	let mobileNav: any;
 
@@ -12,6 +14,11 @@
 		}
 		console.log(mobileNav.getAttribute('aria-expanded'));
 	}
+
+	onMount(() => {
+		const content = document.getElementById('content-wrapper');
+		// if aria-expanded is true, scale the backdround by 1.1
+	});
 </script>
 
 <nav>
@@ -37,18 +44,18 @@
 	</svg>
 
 	<div class="left-nav">
-        <div class='logo-wrapper'>     
-            <img class='logo' alt='logo' src='/logo.png'>
-        </div>
-    </div>
-        <div
-            on:click={toggleMobileNav}
-            bind:this={mobileNav}
-            on:keydown={() => {
-                return;
-            }}
-            aria-expanded="true"
-            class="right-nav"
+		<div class="logo-wrapper">
+			<img class="logo" alt="logo" src="/logo.png" />
+		</div>
+	</div>
+	<div
+		on:click={toggleMobileNav}
+		bind:this={mobileNav}
+		on:keydown={() => {
+			return;
+		}}
+		aria-expanded="true"
+		class="right-nav"
 	>
 		<a href="#qualities">Features</a>
 		<a href="/">Für Unternehmen</a>
@@ -57,9 +64,8 @@
 </nav>
 
 <style lang="scss">
-	$clr-login-button: #2172F2;
+	$clr-login-button: #2172f2;
 	nav {
-
 		font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
 			Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 		display: flex;
@@ -71,10 +77,10 @@
 		flex-direction: column;
 		justify-content: center;
 	}
-    .logo {
-        max-width: 6rem;
-        margin: 1rem 0 0 0;
-    }
+	.logo {
+		max-width: 6rem;
+		margin: 1rem 0 0 0;
+	}
 	.right-nav {
 		position: fixed;
 		width: 100%;
@@ -84,11 +90,10 @@
 		display: flex;
 		flex-direction: column;
 		transform: translateX(0);
-		transition: transform 0.4s ease-in-out;
+		transition: transform 0.4s ease-in-out, scale 0.4s ease-in-out;
 	}
 	.right-nav[aria-expanded='true'] {
 		transform: translateX(-100%);
-		transition: transform 0.3s ease-in-out;
 	}
 	.mobile-nav-button-open {
 		position: fixed;
@@ -136,16 +141,15 @@
 			justify-content: space-between;
 			margin: 0;
 			padding: 1rem 0.5rem 1rem 1rem;
-
 		}
-        .logo-wrapper {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-        .logo {
-            margin: 0;
-        }
+		.logo-wrapper {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+		.logo {
+			margin: 0;
+		}
 		.right-nav {
 			display: flex;
 			position: static;
@@ -185,7 +189,7 @@
 			font-size: 1.25rem;
 			border: 5px solid $clr-login-button;
 			background-color: white;
-			color: $clr-login-button; 
+			color: $clr-login-button;
 			-webkit-box-shadow: 5px 5px 19px 3px rgba(0, 0, 0, 0.55);
 			box-shadow: 5px 5px 19px 3px rgba(0, 0, 0, 0.55);
 			transition: color 0.25s ease-in-out, background-color 0.25s ease-in-out;
@@ -194,7 +198,7 @@
 			-webkit-box-shadow: 5px 5px 19px 3px rgba(0, 0, 0, 0.55);
 			box-shadow: 5px 5px 19px 3px rgba(0, 0, 0, 0.55);
 			color: white;
-			background-color: $clr-login-button; 
+			background-color: $clr-login-button;
 		}
 	}
 </style>

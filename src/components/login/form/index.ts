@@ -1,3 +1,3 @@
-import LoginForm from "./LoginForm.svelte";
+import LoginForm from './LoginForm.svelte';
 
-export { LoginForm }
+export { LoginForm };

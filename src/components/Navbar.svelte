@@ -14,11 +14,6 @@
 		}
 		console.log(mobileNav.getAttribute('aria-expanded'));
 	}
-
-	onMount(() => {
-		const content = document.getElementById('content-wrapper');
-		// if aria-expanded is true, scale the backdround by 1.1
-	});
 </script>
 
 <nav>
@@ -92,7 +87,7 @@
 		transform: translateX(0);
 		transition: transform 0.4s ease-in-out, scale 0.4s ease-in-out;
 	}
-	.right-nav[aria-expanded='true'] {
+	.right-nav[aria-expanded='false'] {
 		transform: translateX(-100%);
 	}
 	.mobile-nav-button-open {
@@ -105,7 +100,7 @@
 		transform: rotate(90deg);
 		transition: transform 0.3s ease;
 	}
-	.mobile-nav-button-open[aria-expanded='true'] {
+	.mobile-nav-button-open[aria-expanded='false'] {
 		z-index: 9999;
 		transform: rotate(0);
 	}
